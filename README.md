@@ -12,57 +12,66 @@ Structural MRI contains rich information about brain morphology, yet differences
 - normalizes intensity across subjects,
 - aligns volumes using PCA-based affine transforms,
 - segments GM/WM/CSF via Gaussian Mixture Models,
-- constructs regional features via voxelwise parcellation, and
-- discovers latent morphometric subtypes through unsupervised learning.
+- constructs regional features via voxelwise parcellation,
+- discovers latent morphometric subtypes through unsupervised clustering, and
+- evaluates these features and subtypes using supervised **machine learning and deep learning** classifiers.
 
-These features support exploratory neuroanatomical analysis and downstream supervised classification.
+The pipeline therefore supports both exploratory neuroanatomical analysis **and** predictive modeling, enabling robust, reproducible morphometric profiling from raw T1-weighted MRI.
 
 ---
 
 ## Key Features
 
 - **One-command preprocessing**  
-  Skull-stripped input → intensity-normalized, aligned, scaled, and ready for segmentation.
+  Skull-stripped input → normalized, aligned, scaled, segmented.
 
-- **Atlas-free tissue segmentation**  
-  GMM-based gray matter (GM), white matter (WM), and cerebrospinal fluid (CSF) estimation.
+- **Atlas-free GMM tissue segmentation**  
+  Quantitative GM/WM/CSF maps produced without external templates.
 
-- **Unsupervised subtype discovery**  
-  K-means clustering reveals GM–CSF morphometric gradients without requiring labels.
+- **Global + regional morphometric features**  
+  Tissue fractions + ~100 voxelwise parcels with mean/variance descriptors.
 
-- **Voxelwise parcellation (~100 parcels)**  
-  Data-driven spatial regions with parcel-level mean & variance intensity features.
+- **Unsupervised morphometric subtype discovery**  
+  K-means clustering reveals GM–CSF structural gradients.
 
-- **Unified ML/DL evaluation suite**  
-  Benchmarks Random Forests, Logistic Regression, XGBoost, and MLP variants  
-  (lean, deep, hybrid) with options for focal loss, label smoothing, SWA, and PCA-based dimensionality reduction.
+- **Integrated supervised ML/DL suite**  
+  End-to-end benchmarking of:
+  - Random Forests  
+  - Logistic Regression  
+  - XGBoost  
+  - Lean MLPs  
+  - Deep MLPs  
+  - Hybrid MLPs  
+  with focal loss, label smoothing, stochastic weight averaging (SWA), and PCA-based dimensionality reduction.
 
-- **Reproducible and modular**  
-  Standardized pipeline, version-controlled code, and reproducible outputs.
+- **Reproducible + modular framework**  
+  Standardized pipeline, version-controlled outputs, and clear interfaces for extension.
 
 ---
 
 ## Pipeline Overview
 
 T1w MRI (NIfTI)
-↓
+        ↓
 Intensity Normalization
-↓
+        ↓
 PCA-Based Affine Alignment
-↓
+        ↓
 Isotropic Rescaling
-↓
+        ↓
 GMM Tissue Segmentation (GM / WM / CSF)
-↓
+        ↓
 Global Tissue Fractions
-↓
+        ↓
 Voxelwise Parcellation (~100 parcels)
-↓
+        ↓
 Parcel-wise Mean & Variance Features
-↓
+        ↓
 Unsupervised Clustering (K-Means)
-↓
-ML/DL Classification (RF, LR, XGBoost, MLP)
+        ↓
+Supervised ML (RF, LR, XGBoost)
+        ↓
+Deep Learning (Lean MLP / Deep MLP / Hybrid MLP)
 
 ---
 
