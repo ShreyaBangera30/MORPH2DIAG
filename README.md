@@ -1,5 +1,5 @@
 # MORPH2DIAG  
-**Atlas-free, automated morphometric pipeline for structural MRI**
+**Atlas-free, Automated Morphometric Pipeline for Structural MRI**
 
 MORPH2DIAG is an end-to-end Python framework for standardized preprocessing, tissue segmentation, feature construction, unsupervised subtype discovery, and machine/deep-learning analysis of T1-weighted structural MRI.  
 Designed for transparency, reproducibility, and full automation, MORPH2DIAG transforms raw MRI volumes into interpretable morphometric signatures—without requiring anatomical atlases or clinical labels.
