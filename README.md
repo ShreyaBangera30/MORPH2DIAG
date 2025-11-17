@@ -51,6 +51,7 @@ The pipeline therefore supports both exploratory neuroanatomical analysis **and*
 
 ## Pipeline Overview
 
+```text
 T1w MRI (NIfTI)
         ↓
 Intensity Normalization
@@ -72,7 +73,7 @@ Unsupervised Clustering (K-Means)
 Supervised ML (RF, LR, XGBoost)
         ↓
 Deep Learning (Lean MLP / Deep MLP / Hybrid MLP)
-
+```
 ---
 
 ## Dataset Compatibility
