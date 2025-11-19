@@ -96,3 +96,6 @@ Clinical labels are not required; MORPH2DIAG supports label-free morphometric an
 ## Citation
 
 If you use MORPH2DIAG in your work, please cite:
+
+Bangera, S.C. **MORPH2DIAG: Automated Structural MRI Preprocessing and Tissue Segmentation for Interpretable Machine and Deep Learning-Based Neuroanatomical Classification**. bioRxiv (2025). [doi:10.1101/2024.01.15.123456.](https://doi.org/10.1101/2025.11.16.688711)
+
