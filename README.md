@@ -5,7 +5,7 @@ MORPH2DIAG is an end-to-end Python framework for standardized preprocessing, tis
 Designed for transparency, reproducibility, and full automation, MORPH2DIAG transforms raw MRI volumes into interpretable morphometric signatures—without requiring anatomical atlases or clinical labels.
 
 <p align="center">
-  <img src="media/logo.png" alt="Framework" width="900"/>
+  <img src="media/logo.png" alt="Framework" width="400"/>
 </p>
 ---
 
