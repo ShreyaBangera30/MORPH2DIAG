@@ -7,6 +7,7 @@ Designed for transparency, reproducibility, and full automation, MORPH2DIAG tran
 <p align="center">
   <img src="media/logo.png" alt="Framework" width="400"/>
 </p>
+
 ---
 
 ## Motivation
