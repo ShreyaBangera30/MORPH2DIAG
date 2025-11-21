@@ -93,6 +93,14 @@ Clinical labels are not required; MORPH2DIAG supports label-free morphometric an
 
 ---
 
+## Instructions
+
+1. All NFBS images can be found within **/NFBS_Zips**
+2. All code scripts can be found within **/scripts** that can be tested on the NFBS images
+3. Follow the numbering per python notebook to run them in order
+
+---
+
 ## Citation
 
 If you use MORPH2DIAG in your work, please cite:
